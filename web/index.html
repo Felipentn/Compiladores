@@ -1,0 +1,110 @@
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+
+    <!-- Comunicação com python -->
+    <script type="text/javascript" src="eel.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap4/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+
+    <!-- Bootstrap DataTable -->
+    <link rel="stylesheet" href="assets/css/bootstrap4/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap4/select.dataTables.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap4/datatables.net_release-datatables_extensions_FixedColumns_css_fixedColumns.bootstrap4.css">
+    <link rel="stylesheet" href="assets/css/bootstrap4/cdn.datatables.net_fixedcolumns_4.3.0_css_fixedColumns.dataTables.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/Style.css">
+    <!-- <link rel="shortcut icon" href="assets/css/favicon.ico" type="image/x-icon"> -->
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-navbar">
+
+        </nav>
+
+    </header>
+
+    <div class="principal" id="principal">
+
+        <!-- D-NONE (todas as páginas) -->
+        <div class="" id="mainPage" style="min-height: 90vh;"></div>
+
+        <div class="d-none row" id="accessPage" style="min-height: 90vh;"></div>
+
+        <div class="d-none row" id="manualPage" style="min-height: 90vh;"></div>
+
+        <div class="d-none row" id="configPage" style="min-height: 90vh;"></div>
+
+        <div class="d-none row" id="toolsPage" style="min-height: 90vh;"></div>
+
+        <footer class="footer text-center">
+            <div class="footerLinks" id="footer">
+                <!-- <div class="d-inline footer-item">Fale conosco</div> -->
+                <!-- <div class="d-inline footer-item">Sobre</div> -->
+            </div>
+            <div id="footerYear">
+                <script>
+                    let footer = document.getElementById('footerYear');
+                    let data = new Date()
+                    let year = data.getFullYear()
+                    let yearCreate = 2023
+                    yearCreate += year == yearCreate ? '' : '-' + year
+                    footer.innerHTML = `©${yearCreate} UNIFACCAMP | Implementação de Linguagens de Programação`
+                </script>
+            </div>
+        </footer>
+    </div>
+
+    <div class="statusbar row fixed-bottom align-items-center justify-content-between" style="z-index: 9999">
+        <div class="col-10" id="statusBar"></div>
+        <div class="col-2">
+            <div class="progress d-none" id="d-progressValue">
+                <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0"
+                    aria-valuemax="100" id="progressValue">
+                    0%
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src='assets/script/jquery3/FileSaver.min.js'></script>
+    <script src='assets/script/jquery3/xlsx.full.min.js'></script>
+    <script src='assets/script/jquery3/jquery-3.5.1.js'></script>
+    <script src='assets/script/bootstrap4/bootstrap.min.js'></script>
+
+
+    <script type="text/javascript" src="assets/script/jquery3/jquery.dataTables.min.js"></script>
+    
+    <script type="text/javascript" src="assets/script/jquery3/nightly.datatables.net_scroller_js_dataTables.scroller.min.js"></script>
+
+    <script type="text/javascript" src="assets/script/jquery3/dataTables.select.min.js"></script>
+    <script type="text/javascript" src="assets/script/jquery3/dataTables.fixedColumns.min.js"></script>
+
+    <script src='assets/script/bootstrap4/dataTables.bootstrap4.min.js'></script>
+
+
+    <script src='assets/script/jquery3/currency.js'></script>
+
+
+    <script src="assets/script/components/interaction.min.js"></script>
+    <script src="assets/script/components/access.min.js"></script>
+    <script src="assets/script/components/table.js"></script>
+    <script src="assets/script/components/form.min.js"></script>
+    <script src="assets/script/components/utils.min.js"></script>
+
+    <!-- SEU SCRIPT  -->
+    <script src="assets/script/script.js"></script>
+    
+</body>
+
+</html>

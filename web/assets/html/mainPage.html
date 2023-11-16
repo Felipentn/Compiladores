@@ -1,0 +1,62 @@
+<!-- <br><br><br> -->
+<div class="centralizado" id="screen_init">
+    <div class="col-8">
+        <form class="rounded center" style="border: 2px solid grey;" id="formulario">
+            <h3 class="text-center p-3" style="font-weight: bold; font-style: italic; font-size: 45px; color: grey;"
+                id="title_whatsapp">&nbspCalculadora Analisadora de Operações Simples
+            </h3>
+            <div class="form-group">
+                <div class="centralize-items">
+                    <input type="text" class="form-control text-center col-4" id="calcule"
+                        placeholder="Digite aqui ...">
+                </div>
+                <br>
+                <div class="centralize-items">
+                    <button type="button" class="btn btn-outline-dark col-4"
+                        onclick="eel.main_funtion(document.getElementById('calcule').value)" id="">
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                        &nbsp Validar
+                    </button>
+                </div>
+                <br>
+
+                <div class="centralize-items">
+                    <input type="text" class="form-control text-center col-3" id="return_calcule" placeholder=""
+                        disabled>
+                    <!-- <input type="text" class="form-control text-center col-1" id="input_cpf"
+                         disabled> -->
+                    <label class="p-3" onclick="clear_input()">
+                        <i class="fa fa-eraser" aria-hidden="true"></i>
+                    </label>
+                    <!-- <span class="input-group-text" style="background-color: green;">
+                                <i class="fa fa-unlock-alt" style="color: aliceblue;" aria-hidden="true"></i>
+                            </span> -->
+
+                </div>
+                <br>
+                <div class="centralize-items">
+                    <input type="text" class="form-control text-center col-4" id="id_valid" placeholder="" disabled>
+                </div>
+
+
+                <br>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<style>
+    .centralizado {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .centralize-items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
